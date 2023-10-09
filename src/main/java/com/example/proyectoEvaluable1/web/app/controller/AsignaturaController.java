@@ -12,7 +12,15 @@ public class AsignaturaController {
 	@GetMapping ("/con-numero")
 	public String m1 (Model model) {
 		model.addAttribute("lista", Asignatura.dameLaListaDeAsignaturas());
+		model.addAttribute("titulo", "Listado con número de alumnos");
 		return "listado-con-alumnos";
+	}
+		
+	@GetMapping ("/sin-numero")
+	public String m2 (Model model) {
+		model.addAttribute("lista", Asignatura.dameLaListaDeAsignaturas());
+		model.addAttribute("titulo", "Listado sin número de alumnos");
+		return "listado-sin-alumnos";
 		
 	}
 

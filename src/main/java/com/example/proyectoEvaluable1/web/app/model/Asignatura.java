@@ -25,7 +25,7 @@ public class Asignatura {
 		this.numAlumnosMatriculados = numAlumnosMatriculados;
 	}
 	//Método para devolver una lista de 20 asignaturas
-		public static List<Asignatura> dameLaListaDeAsignaturas() {
+	public static List<Asignatura> dameLaListaDeAsignaturas() {
 			List<Asignatura> listaAsignaturas = new ArrayList<>();
 			
 			listaAsignaturas.add(new Asignatura(1, "historia", "Esta asignatura tratará sobre la asignatura", "artístico", 3, 0));
@@ -49,12 +49,12 @@ public class Asignatura {
 			listaAsignaturas.add(new Asignatura(19, "mecánica", "Esta asignatura tratará sobre la asignatura", "ciencias", 5, 25));
 			listaAsignaturas.add(new Asignatura(20, "antropología", "Esta asignatura tratará sobre la asignatura", "sociales", 8, 36));
 									
-			return null;
+			return listaAsignaturas;
 			}
 		
 	//Getters (no setters)
 		
-	}
+	
 
 	public int getId() {
 		return id;
